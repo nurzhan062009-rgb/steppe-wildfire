@@ -1,0 +1,12 @@
+# Локально (модель + тренировка + индексы) — работает уже сейчас
+torch>=2.0
+numpy>=1.24
+
+# Для шагов 01/02 — ТОЛЬКО в Google Colab (нужен доступ к GEE/FIRMS API)
+earthengine-api
+geemap
+requests
+pandas
+rasterio
+geopandas
+shapely
