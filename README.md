@@ -14,7 +14,7 @@ source image (66/16), no data leakage between patches of the same fire.
 
 | Model | Parameters | Best val IoU |
 |---|---|---|
-| Baseline U-Net (from scratch) | 7.77M | **0.3554** |
+| Baseline U-Net (from scratch) | 7.77M | **0.3454** |
 | U-Net + ResNet34 (ImageNet, transfer learning) | 24.4M | **0.3624** |
 
 Transfer learning with an ImageNet-pretrained encoder gives a small but
