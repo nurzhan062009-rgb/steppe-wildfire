@@ -9,7 +9,7 @@ cases from 2019-2023, automatically labeled via NASA FIRMS, and cut them
 into 3097 patches of 256x256 for training. We compare a baseline U-Net
 trained from scratch against a version using a pretrained (ImageNet)
 ResNet34 encoder — i.e. transfer learning. The baseline reaches val
-IoU=0.3554, the transfer-learning version reaches val IoU=0.3624. The gap
+IoU=0.3454, the transfer-learning version reaches val IoU=0.3624. The gap
 is small but consistent, matching the expectation that pretrained
 representations help under limited remote-sensing data.
 
@@ -71,7 +71,7 @@ overlapping patches from the same fire would leak between train and val.
 
 | Model | Parameters | Best val IoU |
 |---|---|---|
-| Baseline U-Net (from scratch) | 7.77M | 0.3554 |
+| Baseline U-Net (from scratch) | 7.77M | 0.3454 |
 | U-Net + ResNet34 (transfer learning) | 24.4M | 0.3624 |
 
 Both models were trained on the same train/val split (66/16 source
